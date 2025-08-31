@@ -1,0 +1,12 @@
+<div class="theme-toggle footer d-flex justify-content-between align-items-center p-3">
+
+  <h1 class="m-0"><i class="bi bi-journal-check pe-2"></i>Lista de Tarefas</h1>
+
+  <button type="button" (click)="toggleTheme()">
+    {{ isDark ? '☀️ Modo Claro' : '🌙 Modo Escuro' }}
+  </button>
+</div>
+
+<app-task-list></app-task-list>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
